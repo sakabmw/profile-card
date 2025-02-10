@@ -29,6 +29,11 @@ body {
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: rotate(5deg);
 }
 
 button {

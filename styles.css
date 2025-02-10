@@ -136,13 +136,17 @@ button:hover {
 /* Menu Button */
 .menu-btn {
     position: fixed;
-    top: 20px;
-    left: 20px;
+    top: 10px;
+    left: 10px;
     background: none;
     border: none;
     font-size: 24px;
     color: #007bff;
     cursor: pointer;
+}
+
+.dark-mode .menu-btn {
+    color: white;
 }
 
 /* Close Button */

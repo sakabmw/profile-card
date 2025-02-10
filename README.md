@@ -1,5 +1,4 @@
 # Profile Card
-## Profile card page
 Open the page through this link: https://sakabmw.github.io/profile-card
 
 ## Brief

@@ -1,5 +1,6 @@
 # Profile Card
-## Profile card page: https://sakabmw.github.io/profile-card
+## Profile card page
+Open the page through this link: https://sakabmw.github.io/profile-card
 
 ## Brief
 - I use this repo to exercise on web development.

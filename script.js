@@ -11,6 +11,8 @@ function openSidebar() {
     sidebar.style.opacity = "1";
     overlay.style.opacity = "1";
     overlay.style.visibility = "visible";
+    sidebar.classList.add("active");
+    overlay.classList.add("active");
     document.body.style.overflow = "hidden"; // Prevent scrolling
 }
 
@@ -20,6 +22,8 @@ function closeSidebar() {
     sidebar.style.opacity = "0";
     overlay.style.opacity = "0";
     overlay.style.visibility = "hidden";
+    sidebar.classList.remove("active");
+    overlay.classList.remove("active");
     document.body.style.overflow = "auto"; // Enable scrolling again
 }
 

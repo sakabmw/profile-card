@@ -91,14 +91,20 @@ button:hover {
     position: fixed;
     left: -260px; /* Hidden by default */
     top: 0;
-    width: 250px;
+    width: 260px;
     height: 100%;
     background: #007bff;
-    padding-top: 50px;
+    color: white;
+    padding-top: 60px;
     transition: left 0.4s ease-in-out, opacity 0.3s ease-in-out;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
     opacity: 0; /* Hidden initially */
     z-index: 1000; /* Ensure sidebar is above the overlay */
+}
+
+.sidebar.active {
+    left: 0;
+    opacity: 1;
 }
 
 .sidebar.show {
@@ -211,8 +217,13 @@ button:hover {
     background: rgba(0, 0, 0, 0.5); /* Dark overlay */
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s;
     z-index: 999; /* Keep it below the sidebar */
+}
+
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
 }
 
 .overlay.show {

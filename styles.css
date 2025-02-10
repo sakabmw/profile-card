@@ -52,13 +52,22 @@ button:hover {
 }
 
 .dark-mode {
-    background-color: black;
+    background: linear-gradient(135deg, #232526, #414345); /* Dark gradient */
     color: white;
 }
 
 .dark-mode .card {
     background: #222;
     color: white;
+    box-shadow: 0px 6px 12px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode button {
+    background-color: #ff9800; /* Orange buttons for contrast */
+}
+
+.dark-mode button:hover {
+    background-color: #e68900;
 }
 
 .social-icons {

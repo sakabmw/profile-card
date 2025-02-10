@@ -1,20 +1,22 @@
-document.getElementById("toggleTheme").addEventListener("click", function() {
-    document.body.classList.toggle("dark-mode");
-});
+const toggleAboutMe = document.getElementById("toggle-aboutMe");
+const toggleTheme = document.getElementById("toggle-theme");
+const sidebar = document.getElementById("sidebar");
+const menuBtn = document.getElementById("menu-btn");
+const closeBtn = document.getElementById("close-btn");
+const overlay = document.getElementById("overlay");
 
-document.getElementById("toggleAboutMe").addEventListener("click", function() {
+toggleAboutMe.addEventListener("click", function() {
     let aboutMe = document.getElementById("aboutMe");
     if (aboutMe.style.display === "none") {
         aboutMe.style.display = "block";
     } else {
         aboutMe.style.display = "none";
-    }
-});
+    }    
+});    
 
-const sidebar = document.getElementById("sidebar");
-const menuBtn = document.getElementById("menu-btn");
-const closeBtn = document.getElementById("close-btn");
-const overlay = document.getElementById("overlay");
+toggleTheme.addEventListener("click", function() {
+    document.body.classList.toggle("dark-mode");
+});
 
 // Open Sidebar
 menuBtn.addEventListener("click", () => {

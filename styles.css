@@ -48,3 +48,18 @@ button:hover {
     background: #222;
     color: white;
 }
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #333;
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #007bff;
+}

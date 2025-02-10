@@ -115,10 +115,17 @@ button:hover {
     list-style: none;
     padding: 0;
     text-align: center;
+    margin: 0;
 }
 
 .sidebar-links li {
     margin: 20px 0;
+    padding: 15px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.sidebar-links li:hover {
+    background: rgba(255, 255, 255, 0.2);
 }
 
 .sidebar-links a {
@@ -127,6 +134,13 @@ button:hover {
     font-size: 18px;
     font-weight: bold;
     transition: color 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-links i {
+    margin-right: 10px; /* Space between icon & text */
+    font-size: 20px;
 }
 
 .sidebar-links a:hover {

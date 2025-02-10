@@ -5,6 +5,24 @@ const menuBtn = document.getElementById("menu-btn");
 const closeBtn = document.getElementById("close-btn");
 const overlay = document.getElementById("overlay");
 
+// Function to open sidebar
+function openSidebar() {
+    sidebar.style.left = "0";
+    sidebar.style.opacity = "1";
+    overlay.style.opacity = "1";
+    overlay.style.visibility = "visible";
+    document.body.style.overflow = "hidden"; // Prevent scrolling
+}
+
+// Function to close sidebar
+function closeSidebar() {
+    sidebar.style.left = "-260px";
+    sidebar.style.opacity = "0";
+    overlay.style.opacity = "0";
+    overlay.style.visibility = "hidden";
+    document.body.style.overflow = "auto"; // Enable scrolling again
+}
+
 toggleAboutMe.addEventListener("click", function() {
     let aboutMe = document.getElementById("aboutMe");
     if (aboutMe.style.display === "none") {
@@ -37,3 +55,8 @@ document.addEventListener("click", (event) => {
         overlay.classList.remove("show"); // Hide overlay
     }
 });
+
+// Event listeners
+menuBtn.addEventListener("click", openSidebar);
+closeBtn.addEventListener("click", closeSidebar);
+overlay.addEventListener("click", closeSidebar);

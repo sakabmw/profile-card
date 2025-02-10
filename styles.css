@@ -15,6 +15,12 @@ body {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
     width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .profile-img {
@@ -40,6 +46,10 @@ button:hover {
     background-color: #0056b3;
 }
 
+.button-container {
+    margin-top: 20px; /* Spacing between social icons and buttons */
+}
+
 .dark-mode {
     background-color: black;
     color: white;
@@ -63,17 +73,4 @@ button:hover {
 
 .social-icons a:hover {
     color: #007bff;
-}
-
-.button-container {
-    margin-top: 20px; /* Spacing between social icons and buttons */
-}
-
-.card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
 }

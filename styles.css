@@ -1,3 +1,6 @@
+/* =================== */
+/* 1. Global Styles */
+/* =================== */
 body {
     font-family: Arial, sans-serif;
     display: flex;
@@ -8,35 +11,9 @@ body {
     transition: background 0.3s;
 }
 
-.card {
-    background: white;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 280px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin-top: 50px;
-}
-
-.card:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
-}
-
-.profile-img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 15px;
-    transition: transform 0.3s ease;
-}
-
-.profile-img:hover {
-    transform: rotate(5deg);
-}
-
+/* =================== */
+/* 2. Reusable Components */
+/* =================== */
 button {
     background-color: #007bff;
     color: white;
@@ -53,29 +30,45 @@ button:hover {
     transform: scale(1.05); /* Slight zoom on hover */
 }
 
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: rotate(5deg);
+}
+
+/* =================== */
+/* 3. Card Section */
+/* =================== */
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 280px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 50px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
 .button-container {
     margin-top: 25px; /* Spacing between social icons and buttons */
 }
 
-.dark-mode {
-    background: linear-gradient(135deg, #232526, #414345); /* Dark gradient */
-    color: white;
-}
-
-.dark-mode .card {
-    background: #222;
-    color: white;
-    box-shadow: 0px 6px 12px rgba(255, 255, 255, 0.1);
-}
-
-.dark-mode button {
-    background-color: #ff9800; /* Orange buttons for contrast */
-}
-
-.dark-mode button:hover {
-    background-color: #e68900;
-}
-
+/* =================== */
+/* 4. Social Icons */
+/* =================== */
 .social-icons {
     margin-top: 15px; /* Spacing between profile and icons */
 }
@@ -91,7 +84,9 @@ button:hover {
     color: #007bff;
 }
 
-/* Sidebar Styles */
+/* =================== */
+/* 5. Sidebar & Navigation */
+/* =================== */
 .sidebar {
     position: fixed;
     left: -260px; /* Hidden by default */
@@ -138,16 +133,18 @@ button:hover {
     align-items: center;
 }
 
+.sidebar-links a:hover {
+    color: #ffdd57;
+}
+
 .sidebar-links i {
     margin-right: 10px; /* Space between icon & text */
     font-size: 20px;
 }
 
-.sidebar-links a:hover {
-    color: #ffdd57;
-}
-
-/* Menu Button */
+/* =================== */
+/* 6. Menu & Close Buttons */
+/* =================== */
 .menu-btn {
     position: fixed;
     top: 10px;
@@ -159,11 +156,6 @@ button:hover {
     cursor: pointer;
 }
 
-.dark-mode .menu-btn {
-    color: white;
-}
-
-/* Close Button */
 .close-btn {
     position: absolute;
     top: 10px;
@@ -175,7 +167,41 @@ button:hover {
     cursor: pointer;
 }
 
-/* Overlay Effect */
+/* =================== */
+/* 7. Dark Mode Adjustments */
+/* =================== */
+.dark-mode {
+    background: linear-gradient(135deg, #232526, #414345); /* Dark gradient */
+    color: white;
+}
+
+.dark-mode .card {
+    background: #222;
+    color: white;
+    box-shadow: 0px 6px 12px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode button {
+    background-color: #ff9800; /* Orange buttons for contrast */
+}
+
+.dark-mode button:hover {
+    background-color: #e68900;
+}
+
+.dark-mode .menu-btn {
+    color: #ff9800;
+    background: none;
+}
+
+.dark-mode .close-btn {
+    color: white;
+    background: none;
+}
+
+/* =================== */
+/* 8. Overlay Effects */
+/* =================== */
 .overlay {
     position: fixed;
     top: 0;
@@ -193,4 +219,3 @@ button:hover {
     opacity: 1;
     visibility: visible;
 }
-

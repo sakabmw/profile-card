@@ -10,3 +10,24 @@ document.getElementById("toggleAboutMe").addEventListener("click", function() {
         aboutMe.style.display = "none";
     }
 });
+
+const sidebar = document.getElementById("sidebar");
+const menuBtn = document.getElementById("menu-btn");
+const closeBtn = document.getElementById("close-btn");
+
+// Open Sidebar
+menuBtn.addEventListener("click", () => {
+    sidebar.classList.add("show");
+});
+
+// Close Sidebar
+closeBtn.addEventListener("click", () => {
+    sidebar.classList.remove("show");
+});
+
+// Close sidebar when clicking outside
+document.addEventListener("click", (event) => {
+    if (!sidebar.contains(event.target) && !menuBtn.contains(event.target)) {
+        sidebar.classList.remove("show");
+    }
+});

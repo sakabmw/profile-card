@@ -57,7 +57,6 @@ button:hover {
     text-align: center;
     width: 280px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin-top: 50px;
     display: block !important; /* Ensures it's always visible */
 }
 
@@ -110,7 +109,7 @@ button:hover {
     height: 100%;
     background: #007bff;
     color: white;
-    padding-top: 60px;
+    padding-top: 80px;
     transition: left 0.4s ease-in-out, opacity 0.3s ease-in-out;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
     opacity: 0; /* Hidden initially */
@@ -135,8 +134,9 @@ button:hover {
 }
 
 .sidebar-links li {
-    margin: 20px 0;
-    padding: 15px 20px;
+    /* margin: 20px 0; */
+    /* padding: 15px 20px; */
+    padding: 20px 30px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -257,8 +257,6 @@ section {
 
 #portfolio {
     text-align: center;
-    padding: 50px 20px;
-    margin-top: 50px; /* Adds spacing from the Profile Card */
 }
 
 .title-portfolio {
@@ -298,11 +296,11 @@ section {
     }
 
     .sidebar-links li {
-        padding: 12px 15px; /* Reduce padding */
+        padding: 15px 20px; /* Reduce padding */
     }
 
     .sidebar-links li a {
-        font-size: 16px; /* Adjust font size */
+        font-size: 20px; /* Adjust font size */
     }
 
     .sidebar-links li a i {

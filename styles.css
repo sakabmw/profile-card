@@ -69,15 +69,25 @@ button:hover {
     margin-top: 25px; /* Spacing between social icons and buttons */
 }
 
+#skillTags {
+    margin-top: 10px;
+}
+
 .tag {
     display: inline-block;
     background-color: gray;
     color: white;
     padding: 5px 10px;
     margin: 5px;
-    border-radius: 15px;
+    border-radius: 5px;
     font-size: 12px;
     font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.tag:hover {
+    background-color: #0056b3;
 }
 
 /* =================== */
@@ -92,10 +102,12 @@ button:hover {
     font-size: 20px;
     margin: 0 10px; /* Spacing between icons */
     text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .social-icons a:hover {
     color: #007bff;
+    transform: scale(1.2);
 }
 
 /* =================== */

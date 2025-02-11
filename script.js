@@ -29,10 +29,13 @@ function closeSidebar() {
 
 toggleAboutMe.addEventListener("click", function() {
     let aboutMe = document.getElementById("aboutMe");
+    let skillTags = document.getElementById("skillTags");
     if (aboutMe.style.display === "none") {
         aboutMe.style.display = "block";
+        skillTags.style.display = "block";
     } else {
         aboutMe.style.display = "none";
+        skillTags.style.display = "none";
     }    
 });    
 
@@ -58,6 +61,18 @@ document.addEventListener("click", (event) => {
         sidebar.classList.remove("show");
         overlay.classList.remove("show"); // Hide overlay
     }
+});
+
+document.querySelectorAll('.sidebar-links a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        if (this.getAttribute('href').startsWith("#")) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            document.getElementById(targetId).scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    });
 });
 
 // Event listeners

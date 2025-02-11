@@ -261,6 +261,10 @@ section {
     margin-top: 50px; /* Adds spacing from the Profile Card */
 }
 
+.title-portfolio {
+    margin-top: 0;
+}
+
 .portfolio-links {
     display: flex;
     flex-direction: column;
